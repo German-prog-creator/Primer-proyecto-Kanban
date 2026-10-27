@@ -61,7 +61,6 @@ def delete_task(task_id: int, db: Session = Depends(get_db)):
 
     if __name__ == "__main__":
     import uvicorn
-    # Cambia esto para que lea el puerto dinámico de Render
     import os
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run("main:app", host="0.0.0.0", port=port)
