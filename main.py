@@ -59,7 +59,7 @@ def delete_task(task_id: int, db: Session = Depends(get_db)):
     db.commit()
     return {"message": "Tarea eliminada exitosamente"}
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
     import uvicorn
     import os
     port = int(os.environ.get("PORT", 8000))
